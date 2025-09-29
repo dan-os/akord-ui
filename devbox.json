@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "packages": ["nodejs_24@24.8.0", "pnpm_9@9.15.9"],
+  "shell": {
+    "init_hook": [
+      "if [ -n \"$ZSH_VERSION\" ]; then export SHELL_NAME=zsh; elif [ -n \"$BASH_VERSION\" ]; then export SHELL_NAME=bash;fi",
+      "unset name"
+    ],
+    "scripts": {}
+  }
+}
