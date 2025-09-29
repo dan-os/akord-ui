@@ -33,7 +33,7 @@ const meta = {
   // https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs', 'shadcn/ui'],
   args: {
-    childText: "I'm a button!",
+    childText: "I'm a modified button!",
     // Use `fn` to spy on the onPress arg, which will appear in the actions panel once invoked:
     // https://storybook.js.org/docs/essentials/actions#action-args
     onPress: fn(),
