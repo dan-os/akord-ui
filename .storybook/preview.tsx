@@ -2,7 +2,7 @@ import '@/global.css';
 
 import React from 'react';
 
-import { useColorScheme } from 'nativewind';
+// import { useColorScheme } from 'nativewind';
 import { ThemeProvider } from '@react-navigation/native';
 import type { Preview } from '@storybook/react-native-web-vite';
 
@@ -33,11 +33,11 @@ const preview: Preview = {
 
   decorators: [
     (Story, { globals }) => {
-      const { colorScheme, setColorScheme } = useColorScheme();
-      setColorScheme(globals.backgrounds?.value ?? 'light');
+      // const { colorScheme, setColorScheme } = useColorScheme();
+      // setColorScheme(globals.backgrounds?.value ?? 'light');
 
       return (
-        <ThemeProvider value={NAV_THEME[colorScheme ?? 'light']}>
+        <ThemeProvider value={NAV_THEME['light']}>
           <Story />
         </ThemeProvider>
       );

@@ -51,10 +51,10 @@ const config: StorybookConfig = {
           },
         },
       },
-      build: {
-        sourcemap: true, // Enable source maps for debugging
-        minify: false, // Disable minification
-      },
+      // build: {
+      //   sourcemap: true,
+      //   minify: false,
+      // },
     });
   },
 };
